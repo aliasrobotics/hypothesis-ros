@@ -31,14 +31,22 @@ def log(draw,  # DEBUG=uint8(), INFO=uint8(), WARN=uint8(), ERROR=uint8(), FATAL
 
     Parameters
     ----------
-    header
-    level
-    name
-    msg
-    file
-    function
-    line
-    topics
+    header : hypothesis_ros.messages.std_msgs.header()
+        Strategy to generate header value. (Default: Default hypothesis_ros strategy.)
+    level : hypothesis_ros.message_fields.uint8()
+        Strategy to generate level value. (Default: Default hypothesis_ros strategy.)
+    name : hypothesis_ros.message_fields.string()
+        Strategy to generate name value. (Default: Default hypothesis_ros strategy.)
+    msg : hypothesis_ros.message_fields.string()
+        Strategy to generate msg value. (Default: Default hypothesis_ros strategy.)
+    file : hypothesis_ros.message_fields.string()
+        Strategy to generate file value. (Default: Default hypothesis_ros strategy.)
+    function : hypothesis_ros.message_fields.string()
+        Strategy to generate function value. (Default: Default hypothesis_ros strategy.)
+    line : hypothesis_ros.message_fields.string()
+        Strategy to generate line value. (Default: Default hypothesis_ros strategy.)
+    topics : hypothesis_ros.message_fields.array()
+        Strategy to generate topics value. (Default: Default hypothesis_ros strategy.)
 
     """
 
