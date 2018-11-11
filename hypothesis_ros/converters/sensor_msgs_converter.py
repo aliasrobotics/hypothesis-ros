@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from hypothesis_ros.messages.sensor_msgs import (
+from hypothesis_ros.messages.sensor_messages import (
     _Image,
     _Imu,
 )

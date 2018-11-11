@@ -12,7 +12,7 @@ Provides hypothesis strategies for `ROS1 tf2_msgs`_.
 from collections import namedtuple
 from hypothesis.strategies import composite
 
-from hypothesis_ros.messages.geometry_msgs import transform_stamped
+from hypothesis_ros.messages.geometry_messages import transform_stamped
 from hypothesis_ros.message_fields import array
 
 

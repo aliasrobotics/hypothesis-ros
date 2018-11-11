@@ -11,8 +11,8 @@ Provides hypothesis strategies for `ROS1 sensor_msgs`_.
 from collections import namedtuple
 from hypothesis.strategies import composite, sampled_from
 
-from hypothesis_ros.messages.geometry_msgs import vector3, quaternion
-from hypothesis_ros.messages.std_msgs import header
+from hypothesis_ros.messages.geometry_messages import vector3, quaternion
+from hypothesis_ros.messages.std_messages import header
 from hypothesis_ros.message_fields import (  # pylint: disable=redefined-builtin
     array,
     bool,

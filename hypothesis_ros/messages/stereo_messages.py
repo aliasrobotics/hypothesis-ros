@@ -11,9 +11,9 @@ Provides hypothesis strategies for `ROS1 stereo_msgs`_.
 from collections import namedtuple
 from hypothesis.strategies import composite
 
-from hypothesis_ros.messages.geometry_msgs import transform_stamped
-from hypothesis_ros.messages.sensor_msgs import image, region_of_interest
-from hypothesis_ros.messages.std_msgs import header
+from hypothesis_ros.messages.geometry_messages import transform_stamped
+from hypothesis_ros.messages.sensor_messages import image, region_of_interest
+from hypothesis_ros.messages.std_messages import header
 from hypothesis_ros.message_fields import (
     array,
     float32

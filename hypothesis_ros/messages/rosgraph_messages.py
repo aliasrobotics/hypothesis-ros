@@ -18,7 +18,7 @@ from hypothesis_ros.message_fields import (
     array,
 )
 
-from hypothesis_ros.messages.std_msgs import header
+from hypothesis_ros.messages.std_messages import header
 
 _Log = namedtuple('Log', 'header level name msg file function line topics')
 
@@ -68,4 +68,3 @@ def log(draw,  # DEBUG=uint8(), INFO=uint8(), WARN=uint8(), ERROR=uint8(), FATAL
     assert isinstance(topics_value, list), 'drew invalid topics={topics_value} from {msg} for list field'.format(topics_value, topics)
 
     return _Log(header_value, level_value, name_value, msg_value, file_value, function_value, line_value, topics_value)
-

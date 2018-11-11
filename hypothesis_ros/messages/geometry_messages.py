@@ -11,7 +11,7 @@ Provides hypothesis strategies for `ROS geometry_msgs`_.
 from collections import namedtuple
 from hypothesis.strategies import composite
 
-from hypothesis_ros.messages.std_msgs import header, _Header
+from hypothesis_ros.messages.std_messages import header, _Header
 from hypothesis_ros.message_fields import (
     array,
     float64,
