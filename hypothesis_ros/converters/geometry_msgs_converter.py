@@ -5,7 +5,7 @@ Provides converters for message field data generators which map
 Python-only dependency data to rospy compatible publisher arguments.
 """
 
-from hypothesis_ros.messages.geometry_msgs import (
+from hypothesis_ros.messages.geometry_messages import (
     _Point,
     _Quaternion,
     _Pose,
@@ -13,8 +13,8 @@ from hypothesis_ros.messages.geometry_msgs import (
     _TransformStamped,
     _Vector3,
 )
-from hypothesis_ros.messages.std_msgs import _Header
-from hypothesis_ros.converters.std_msgs import map_header
+from hypothesis_ros.messages.std_messages import _Header
+from hypothesis_ros.converters.std_msgs_converter import map_header
 
 try:
     from geometry_msgs.msg import (

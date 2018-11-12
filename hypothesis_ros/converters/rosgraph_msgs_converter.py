@@ -4,12 +4,12 @@
 Provides converters for rosgraph_msgs message field generators which map
 internal data type to rospy compatible publisher arguments.
 """
-from hypothesis_ros.messages.rosgraph_msgs import _Log
+from hypothesis_ros.messages.rosgraph_messages import _Log
 try:
     from rosgraph_msgs.msg import Log
 except ImportError:
-    raise ImportError('Please install ROS1 package ros-{ROS-DISTRO}-common-msgs.')
-
+    print("Error from rosgraph_msgs.msg import Log")
+    raise ImportError('Please install ROS1 package ros-{ROS-DISTRO}-rosgraph_msgs-msgs.')
 
 def map_log(values):
     """

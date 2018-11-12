@@ -5,7 +5,7 @@ Provides converters for std_msgs message field generators which map
 internal data type to rospy compatible publisher arguments.
 """
 
-from hypothesis_ros.messages.std_msgs import _Header
+from hypothesis_ros.messages.std_messages import _Header
 try:
     from std_msgs.msg import Header
 except ImportError:
